@@ -1,0 +1,61 @@
+{
+  "translations": {
+    "de": {
+      "searchPlaceholder": "Suche Sie nach Produkten, Symptomen oder stellen Sie eine Frage ...",
+      "showAll": "Alle Ergebnisse anzeigen",
+      "resultsCounterInfix": "von",
+      "resultsCounter": "Ergebnissen für",
+      "priceFrom": "Ab",
+      "outOfStock": "Nicht auf Lager",
+      "resultsPerPage": "Anzeigen",
+      "sortBy": "Sortiere nach",
+      "sortByRelevance": "Relevanz",
+      "sortByTitle": "Titel",
+      "filter": "Filtern",
+      "andSort": "und sortieren",
+      "searchButton": "Suchen",
+      "product": "Produkt",
+      "category": "Kategorie",
+      "leaflet": "Packungsbeilage",
+      "faq": "FAQ"
+    },
+    "en": {
+      "searchPlaceholder": "Search for products, symptoms or ask a question ...",
+      "showAll": "Show all results",
+      "resultsCounterInfix": "of",
+      "resultsCounter": "results for",
+      "priceFrom": "from",
+      "outOfStock": "Out of stock",
+      "resultsPerPage": "Show",
+      "sortBy": "Sort by",
+      "sortByRelevance": "Relevance",
+      "sortByTitle": "Title",
+      "filter": "Filter",
+      "andSort": "and sort",
+      "searchButton": "Search",
+      "product": "Product",
+      "category": "Category",
+      "leaflet": "Leaflet",
+      "faq": "FAQ"
+    },
+    "nl": {
+      "searchPlaceholder": "Zoek naar producten, symptomen of stel een vraag ...",
+      "showAll": "Toon alles",
+      "resultsCounterInfix": "van",
+      "resultsCounter": "resultaten voor",
+      "priceFrom": "vanaf",
+      "outOfStock": "Niet op voorraad",
+      "resultsPerPage": "Toon",
+      "sortBy": "Sorteren op",
+      "sortByRelevance": "Relevantie",
+      "sortByTitle": "Titel",
+      "filter": "Filter",
+      "andSort": "en sorteer",
+      "searchButton": "Zoeken",
+      "product": "Product",
+      "category": "Categorie",
+      "leaflet": "Brochure",
+      "faq": "FAQ"
+    }
+  }
+}
