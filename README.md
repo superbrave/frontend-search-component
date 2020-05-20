@@ -45,6 +45,8 @@ Your HTML will look something like this
 </div>
 ```
 
+# Development
+
 ### Build the CommonJS module
 
 ```
@@ -55,4 +57,10 @@ yarn module
 
 ```
 yarn lint
+```
+
+### Serve the module
+
+```
+yarn serve
 ```

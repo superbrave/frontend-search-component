@@ -1,17 +1,19 @@
 <template>
   <div class="search-results-summary">
-    {{ searchState.totalResults }} {{ translate("resultsCounter") }} "{{ searchState.searchTerm }}"
+    {{ searchState.totalResults }} {{ translate("resultsCounter") }} "{{
+      searchState.searchTerm
+    }}"
   </div>
 </template>
 
 <script>
-import getTranslations from "../mixins/translate";
+import getTranslations from "./../../mixins/translate";
 export default {
   props: {
     searchState: {
       required: true,
-      type: Object
-    }
+      type: Object,
+    },
   },
   computed: {
     start() {
@@ -23,13 +25,15 @@ export default {
       return this.searchState.totalResults <= this.searchState.resultsPerPage
         ? this.searchState.totalResults
         : this.start + this.searchState.resultsPerPage - 1;
-    }
+    },
   },
-  mixins: [getTranslations]
+  mixins: [getTranslations],
 };
 </script>
 
 <style lang="scss">
+@import "./../../scss/style.scss";
+
 .search-results-summary {
   @extend %padding-top-small;
   @extend %padding-bottom-tiny;

@@ -1,9 +1,10 @@
 $global-breakpoints: (
-  mobile: 0, //Is used to generate 'base classes' without responsive modifier, for example in paddings/margins
-  tablet-portrait: 600px,
+  mobile: 0,
+  //Is used to generate 'base classes' without responsive modifier, for example in paddings/margins
+    tablet-portrait: 600px,
   tablet-landscape: 768px,
   desktop: 1200px,
-  fullhd: 1800px
+  fullhd: 1800px,
 );
 
-@import 'node_modules/superbrave-utility-framework/src/scss/style';
+@import "node_modules/superbrave-utility-framework/src/scss/style";
