@@ -39,7 +39,6 @@ Your HTML will look something like this
 <div id="sbElasticHeader">
     <search-header lang="nl" />
 </div>
-
 <div id="sbElasticDetail">
     <search-detail lang="nl />
 </div>
