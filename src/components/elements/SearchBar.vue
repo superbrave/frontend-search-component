@@ -1,10 +1,6 @@
 <template>
   <div class="search-header">
-    <form
-      @submit.prevent="submitEvent($event)"
-      @keydown="handleKeyDown($event)"
-      @keyup="handleKeyUp($event)"
-    >
+    <form @submit.prevent="submitEvent($event)" @keyup="handleKeyUp($event)">
       <div class="search-box">
         <div class="form-input">
           <input
@@ -55,10 +51,6 @@ export default {
     submitEvent(event) {
       clearTimeout(this.callbackTimer);
       this.$emit("submit", event.target.value);
-    },
-
-    handleKeyDown(event) {
-      this.ctrlDown = [17, 91].includes(event.keyCode);
     },
 
     handleKeyUp(event) {

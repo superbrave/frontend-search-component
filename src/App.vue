@@ -1,10 +1,10 @@
 <template>
   <div id="app" lang="de">
     <h1>Header + Flyout</h1>
-    <search-header env="dev" language="nl" />
+    <search-header env="dev" language="de" />
 
     <h1>Search Detail</h1>
-    <SearchDetail env="dev" language="nl" />
+    <SearchDetail env="dev" language="de" />
   </div>
 </template>
 

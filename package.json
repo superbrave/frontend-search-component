@@ -1,7 +1,8 @@
 {
   "name": "@superbrave/dok-search-vue",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "GPL-3.0",
   "main": "./dist/sbdoksearch.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
