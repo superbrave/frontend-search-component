@@ -1,6 +1,10 @@
 <template>
   <div class="search-header">
-    <form @submit.prevent="submitEvent($event)" @keyup="handleKeyUp($event)">
+    <form
+      @submit.prevent="submitEvent($event)"
+      @keydown="handleKeyDown($event)"
+      @keyup="handleKeyUp($event)"
+    >
       <div class="search-box">
         <div class="form-input">
           <input
@@ -38,6 +42,7 @@ export default {
       callbackTimer: null,
       searchState: null,
       warningClass: false,
+      ctrlDown: false,
     };
   },
   props: {
@@ -51,6 +56,11 @@ export default {
       clearTimeout(this.callbackTimer);
       this.$emit("submit", event.target.value);
     },
+
+    handleKeyDown(event) {
+      this.ctrlDown = [17, 91].includes(event.keyCode);
+    },
+
     handleKeyUp(event) {
       if (!this.checkAllowedKeyUpValues(event.keyCode)) {
         return false;
@@ -78,7 +88,7 @@ export default {
     checkAllowedKeyUpValues(keyCode) {
       if (
         (keyCode >= 48 && keyCode <= 57) ||
-        (keyCode >= 65 && keyCode <= 90) ||
+        (keyCode >= 65 && keyCode <= 91) ||
         [8, 189].includes(keyCode)
       ) {
         return true;
@@ -86,6 +96,7 @@ export default {
       return false;
     },
   },
+  inject: ["language"],
   mixins: [getTranslations],
 };
 </script>

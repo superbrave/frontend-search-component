@@ -48,6 +48,7 @@ export default {
     },
   },
   mixins: [getTranslations],
+  inject: ["language"],
 };
 </script>
 

@@ -47,8 +47,14 @@ export default {
     SearchBar,
   },
   props: {
-    language: String,
-    env: String,
+    language: {
+      type: String,
+      required: true,
+    },
+    env: {
+      type: String,
+      default: () => "prod",
+    },
   },
   data() {
     return {
@@ -138,6 +144,11 @@ export default {
     },
   },
   mixins: [getTranslations],
+  provide() {
+    return {
+      language: this.language,
+    };
+  },
 };
 </script>
 

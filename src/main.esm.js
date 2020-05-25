@@ -6,5 +6,5 @@
 import SearchHeader from "./components/SearchHeader.vue";
 import SearchDetail from "./components/SearchDetail.vue";
 
-export const SbSearchHeader = SearchHeader;
-export const SbSearchDetail = SearchDetail;
+export const dokSearchHeader = SearchHeader;
+export const dokSearchDetail = SearchDetail;
