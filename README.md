@@ -13,6 +13,12 @@ import Vue from "vue"; // Make sure to install Vue first
 import { SbSearchHeader, SbSearchDetail } from "sb-search-dok"; // Import the components
 ```
 
+Import the CSS. This can be done in JS or CSS
+
+```css
+import '@superbrave/vue-search-dok/dist/sbsearch.css'
+```
+
 Now you can create a new Vue instance and add the components
 
 ```js
@@ -39,11 +45,12 @@ Your HTML will look something like this
 <div id="sbElasticHeader">
     <search-header lang="nl" />
 </div>
-
 <div id="sbElasticDetail">
     <search-detail lang="nl />
 </div>
 ```
+
+# Development
 
 ### Build the CommonJS module
 
@@ -55,4 +62,10 @@ yarn module
 
 ```
 yarn lint
+```
+
+### Serve the module
+
+```
+yarn serve
 ```

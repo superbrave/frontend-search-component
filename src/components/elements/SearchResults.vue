@@ -1,6 +1,5 @@
 <template>
   <ul class="search-results-wrapper">
-    <!-- {{ results }} -->
     <li
       v-for="result in results"
       :key="result.id.raw"
@@ -16,22 +15,24 @@ import SearchResult from "./SearchResult";
 
 export default {
   components: {
-    SearchResult
+    SearchResult,
   },
   props: {
     results: {
       type: Array,
-      required: true
+      required: true,
     },
     driver: {
       type: Object,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 </script>
 
 <style lang="scss">
+@import "./../../scss/style.scss";
+
 .search-results-wrapper {
   @extend %block;
   @extend %padding-none;

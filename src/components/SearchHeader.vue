@@ -1,6 +1,6 @@
 <template>
   <div class="search-component">
-    <SearchHeader
+    <SearchBar
       v-model="searchInputValue"
       @submit="handleFormSubmit"
       @keyUpEvent="handleFlyOutEvent"
@@ -29,15 +29,11 @@
 </template>
 
 <script>
-import getTranslations from "../mixins/translate";
+import getTranslations from "./../mixins/translate";
 import { SearchDriver } from "@elastic/search-ui";
-import config from "./config";
+import config from "./../config";
 import SearchResults from "./elements/SearchResults";
-import SearchFacet from "./elements/SearchFacet";
-import SearchHeader from "./elements/SearchHeader";
-import SearchPagingInfo from "./elements/SearchPagingInfo";
-import SearchPagination from "./elements/SearchPagination";
-import SearchSort from "./elements/SearchSort";
+import SearchBar from "./elements/SearchBar.vue";
 import SearchPagingInfoFlyout from "./elements/SearchPagingInfoFlyout";
 
 const MIN_CHARACTERS = 3;
@@ -48,7 +44,7 @@ export default {
   components: {
     SearchPagingInfoFlyout,
     SearchResults,
-    SearchHeader,
+    SearchBar,
   },
   props: {
     language: String,
@@ -131,7 +127,7 @@ export default {
         }
       }, 200);
     },
-    showFlyOut(value) {
+    showFlyOut() {
       if (Object.keys(this.driver).length === 0) {
         this.setupSearchDriver();
       }
@@ -146,8 +142,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./../scss/style.scss";
+
 .search-component {
-  @extend %margin-right-large\|tablet-landscape;
   @extend %width-3of4\|tablet-landscape;
 
   font-family: $font-default;
@@ -187,6 +184,12 @@ export default {
 
   .search-pagination {
     text-align: center;
+  }
+
+  .results-flyout-wrapper {
+    position: absolute;
+    background: $color-global-light;
+    z-index: 200;
   }
 
   .results-flyout {

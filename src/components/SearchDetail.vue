@@ -1,6 +1,6 @@
 <template>
   <div class="search-detail-page" ref="searchFilters">
-    <SearchHeader
+    <SearchBar
       v-model="searchInputValue"
       @submit="handleDetailFormSubmit"
       @keyUpEvent="handleDetailFormSubmit"
@@ -80,28 +80,20 @@
 
 <script>
 import { SearchDriver } from "@elastic/search-ui";
-import config from "./config";
-import getTranslations from "../mixins/translate";
+import config from "./../config";
+import getTranslations from "./../mixins/translate";
 import SearchResults from "./elements/SearchResults";
 import SearchFacet from "./elements/SearchFacet";
-import SearchHeader from "./elements/SearchHeader";
-import SearchPagingInfo from "./elements/SearchPagingInfo";
-import SearchPagination from "./elements/SearchPagination";
-import SearchSort from "./elements/SearchSort";
-import SearchPagingInfoFlyout from "./elements/SearchPagingInfoFlyout";
+import SearchBar from "./elements/SearchBar";
 
 const MIN_CHARACTERS = 3;
 const MIN_SCORE = 0.5;
 
 export default {
   components: {
-    SearchPagingInfoFlyout,
     SearchResults,
     SearchFacet,
-    SearchHeader,
-    SearchPagingInfo,
-    SearchPagination,
-    SearchSort,
+    SearchBar,
   },
   props: {
     language: String,
@@ -139,13 +131,7 @@ export default {
     this.driver.setResultsPerPage(50);
   },
   mounted() {
-    const {
-      searchTerm,
-      sortField,
-      resultsPerPage,
-      filters,
-      facets,
-    } = this.driver.getState();
+    const { searchTerm, sortField, filters, facets } = this.driver.getState();
 
     // restoring UI from url query
     this.searchInputValue = searchTerm;
@@ -251,6 +237,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./../scss/style.scss";
+
 .content > .elasticsearch {
   margin-left: -1.25em;
   margin-right: -1.25em;
@@ -261,8 +249,6 @@ export default {
 }
 
 .search-detail-page {
-  @extend %margin-horizontal-large\|tablet-landscape;
-
   .search-body {
     @extend %flex;
     @extend %padding-vertical-base;
@@ -298,7 +284,6 @@ export default {
 
   .search-filters-head {
     @extend %flex;
-    @extend %padding-bottom-base;
     @extend %margin-bottom-tiny;
 
     align-items: center;
@@ -342,6 +327,7 @@ export default {
   .search-filter-title {
     flex-grow: 1;
     color: $color-font-base;
+    margin: 0;
   }
 
   .search-main-body {
