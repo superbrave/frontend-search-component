@@ -1,0 +1,57 @@
+h1,
+%h1 {
+  @extend %font-size-primary;
+
+  color: $color-primary;
+  font-weight: 700;
+}
+h2,
+%h2 {
+  @extend %font-size-secondary;
+
+  color: $color-primary;
+  font-weight: 600;
+}
+h3,
+%h3 {
+  @extend %font-size-tertiary;
+}
+h4,
+%h4 {
+  @extend %font-size-quaternary;
+
+  color: $color-global-halftone;
+  font-weight: 500;
+}
+h5,
+%h5 {
+  @extend %font-size-quinary;
+
+  color: $color-primary;
+  font-weight: 400;
+}
+h6,
+%h6 {
+  @extend %font-size-senary;
+
+  color: $color-global-halftone;
+  font-weight: 400;
+}
+
+p,
+%p,
+a {
+  @extend %font-size-base;
+
+  color: $color-font-base;
+}
+
+.small-text {
+  @extend %font-size-senary;
+
+  color: $color-label-font;
+}
+
+body {
+  font-family: $font-default;
+}
