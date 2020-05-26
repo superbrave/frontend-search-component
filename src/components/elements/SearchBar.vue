@@ -51,6 +51,7 @@ export default {
       clearTimeout(this.callbackTimer);
       this.$emit("submit", event.target.value);
     },
+
     handleKeyUp(event) {
       if (!this.checkAllowedKeyUpValues(event.keyCode)) {
         return false;
@@ -78,7 +79,7 @@ export default {
     checkAllowedKeyUpValues(keyCode) {
       if (
         (keyCode >= 48 && keyCode <= 57) ||
-        (keyCode >= 65 && keyCode <= 90) ||
+        (keyCode >= 65 && keyCode <= 91) ||
         [8, 189].includes(keyCode)
       ) {
         return true;
@@ -86,6 +87,7 @@ export default {
       return false;
     },
   },
+  inject: ["language"],
   mixins: [getTranslations],
 };
 </script>

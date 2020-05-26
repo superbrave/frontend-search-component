@@ -1,14 +1,15 @@
 {
-  "name": "@superbrave/vue-search-dok",
+  "name": "@superbrave/dok-search-vue",
   "version": "0.1.0",
-  "private": true,
-  "main": "./dist/sbsearch.common.js",
+  "private": false,
+  "license": "GPL-3.0",
+  "main": "./dist/sbdoksearch.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "web": "vue-cli-service build --target wc --name sb-search-wc ./src/main.wc.js",
-    "module": "vue-cli-service build --target lib --name sbsearch ./src/main.esm.js"
+    "module": "vue-cli-service build --target lib --name sbdoksearch ./src/main.esm.js"
   },
   "prettier": {},
   "dependencies": {

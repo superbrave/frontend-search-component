@@ -37,7 +37,6 @@
       </div>
       <div class="search-main-body">
         <div class="search-meta">
-          <SearchPagingInfo :search-state="searchState" />
           <div class="mobile-only search-filters-toggle">
             <button
               @click="toggleFilters"
@@ -96,8 +95,14 @@ export default {
     SearchBar,
   },
   props: {
-    language: String,
-    env: String,
+    language: {
+      type: String,
+      required: true,
+    },
+    env: {
+      type: String,
+      default: () => "prod",
+    },
   },
   data() {
     return {
@@ -233,6 +238,11 @@ export default {
     },
   },
   mixins: [getTranslations],
+  provide() {
+    return {
+      language: this.language,
+    };
+  },
 };
 </script>
 

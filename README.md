@@ -3,20 +3,20 @@
 ## Project setup
 
 ```
-yarn add [path to local 'frontend-search-component']
+yarn add @superbrave/dok-search-vue
 ```
 
 ## Webpack Config
 
 ```js
 import Vue from "vue"; // Make sure to install Vue first
-import { SbSearchHeader, SbSearchDetail } from "sb-search-dok"; // Import the components
+import { dokSearchHeader, dokSearchDetail } from "@superbrave/dok-search-vue"; // Import the components
 ```
 
 Import the CSS. This can be done in JS or CSS
 
 ```css
-import '@superbrave/vue-search-dok/dist/sbsearch.css'
+import '@superbrave/dok-search-vue/dist/sbdoksearch.css'
 ```
 
 Now you can create a new Vue instance and add the components
@@ -24,31 +24,41 @@ Now you can create a new Vue instance and add the components
 ```js
 // For the Search Header
 new Vue({
-  el: "#sbElasticHeader",
+  el: "#dokSearchHeader",
   components: {
-    SearchHeader: SbSearchHeader,
+    SearchHeader: dokSearchHeader,
   },
 });
 
 // For the Detail page
 new Vue({
-  el: "#sbElasticDetail-content",
+  el: "#dokSearchDetail",
   components: {
-    SearchDetail: SbSearchDetail,
+    SearchDetail: dokSearchDetail,
   },
 });
 ```
 
-Your HTML will look something like this
+Example HTML:
 
 ```html
-<div id="sbElasticHeader">
-    <search-header lang="nl" />
+<!-- For the Search Header -->
+<div id="dokSearchHeader">
+  <search-header env="dev" language="nl" />
 </div>
-<div id="sbElasticDetail">
-    <search-detail lang="nl />
+
+<!-- For the Detail page -->
+<div id="dokSearchDetail">
+  <search-detail env="dev" language="nl" />
 </div>
 ```
+
+| Parameter  | Required | Default | Info                                   |
+| ---------- | -------- | ------- | -------------------------------------- |
+| `language` | Yes      | `''`    | ISO 639-1 language code                |
+| `env`      | No       | `prod`  | Options: `dev`, `test`, `acc`, `prod`. |
+
+\* Please note that this combination wil determine the AppSearch engine so results may vary due to the chosen `env` mode and the `language`.
 
 # Development
 
