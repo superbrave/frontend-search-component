@@ -38,7 +38,6 @@ export default {
       callbackTimer: null,
       searchState: null,
       warningClass: false,
-      ctrlDown: false,
     };
   },
   props: {
