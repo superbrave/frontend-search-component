@@ -79,3 +79,11 @@ yarn lint
 ```
 yarn serve
 ```
+
+### Run tests
+
+Unit test will always run before pushing to git
+
+```
+yarn test:unit
+```
