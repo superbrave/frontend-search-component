@@ -73,7 +73,6 @@
   "prettier": {},
   "husky": {
     "hooks": {
-      "pre-commit": "yarn test:unit",
       "pre-push": "yarn test:unit"
     }
   },
