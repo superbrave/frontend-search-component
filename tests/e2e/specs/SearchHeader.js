@@ -20,6 +20,6 @@ describe("Test the Search header", () => {
     cy.get("h1:first-child").click();
     cy.wait(500);
 
-    cy.get(".search-component .results-flyout-wrapper").should("exist");
+    cy.get(".search-component .results-flyout-wrapper").should("not.exist");
   });
 });
