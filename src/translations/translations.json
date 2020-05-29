@@ -58,7 +58,7 @@
       "faq": "FAQ"
     },
     "fr": {
-      "searchPlaceholder": "Recherchez des produits, des symptômes ou posez une question...",
+      "searchPlaceholder": "Recherchez des produits, des symptômes ou posez une question ...",
       "showAll": "Afficher tout",
       "resultsCounterInfix": "de",
       "resultsCounter": "résultats pour",
@@ -77,7 +77,7 @@
       "faq": "FAQ"
     },
     "se": {
-      "searchPlaceholder": "Sök efter produkter, symtom eller ställ en fråga...",
+      "searchPlaceholder": "Sök efter produkter, symtom eller ställ en fråga ...",
       "showAll": "Visa allt",
       "resultsCounterInfix": "av",
       "resultsCounter": "resultat för",
@@ -96,7 +96,7 @@
       "faq": "FAQ"
     },
     "pl": {
-      "searchPlaceholder": "Wyszukaj produkty, objawy lub zadaj pytanie...",
+      "searchPlaceholder": "Wyszukaj produkty, objawy lub zadaj pytanie ...",
       "showAll": "Pokaż wszystko",
       "resultsCounterInfix": "z",
       "resultsCounter": "wyniki dla",
@@ -115,7 +115,7 @@
       "faq": "FAQ"
     },
     "pt": {
-      "searchPlaceholder": "Pesquise produtos, sintomas ou faça uma pergunta...",
+      "searchPlaceholder": "Pesquise produtos, sintomas ou faça uma pergunta ...",
       "showAll": "Mostre tudo",
       "resultsCounterInfix": "de",
       "resultsCounter": "Resultados para",
@@ -134,7 +134,7 @@
       "faq": "Perguntas frequentes"
     },
     "dk": {
-      "searchPlaceholder": "Søg efter produkter, symptomer eller still et spørgsmål...",
+      "searchPlaceholder": "Søg efter produkter, symptomer eller still et spørgsmål ...",
       "showAll": "Vis alt",
       "resultsCounterInfix": "af",
       "resultsCounter": "Resultater for",
@@ -153,7 +153,7 @@
       "faq": "Ofte stillede spørgsmål"
     },
     "es": {
-      "searchPlaceholder": "Busque productos, síntomas o haga una pregunta...",
+      "searchPlaceholder": "Busque productos, síntomas o haga una pregunta ...",
       "showAll": "Mostrar todo",
       "resultsCounterInfix": "de",
       "resultsCounter": "resultados para",
