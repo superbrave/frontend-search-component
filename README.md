@@ -57,9 +57,9 @@ Example HTML:
 | ----------- | -------- | ------------ | ----------------------------------------------------------------------------------------- |
 | `language`  | Yes      | `''`         | ISO 639-1 language code                                                                   |
 | `env`       | No       | `production` | Options: `dev`, `test`, `acceptance`, `production`.                                       |
-| `detailUri` | No       | `''`         | The URL of the search detail page. Example: `/search` Only available in the Search Header |
+| `detailUri` | No       | `''`         | The URI of the search detail page. Example: `/search` Only available in the Search Header |
 
-\* Please note that this combination wil determine the AppSearch engine so results may vary due to the chosen `env` mode and the `language`.
+\* Please note that the combination of `language` and `env` wil determine the AppSearch engine so results may vary due to the chosen values.
 
 # Development
 
