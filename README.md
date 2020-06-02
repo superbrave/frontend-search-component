@@ -44,7 +44,7 @@ Example HTML:
 ```html
 <!-- For the Search Header -->
 <div id="dokSearchHeader">
-  <search-header env="dev" language="nl" />
+  <search-header env="dev" language="nl" detailUri="/search" />
 </div>
 
 <!-- For the Detail page -->
@@ -53,10 +53,11 @@ Example HTML:
 </div>
 ```
 
-| Parameter  | Required | Default      | Info                                                |
-| ---------- | -------- | ------------ | --------------------------------------------------- |
-| `language` | Yes      | `''`         | ISO 639-1 language code                             |
-| `env`      | No       | `production` | Options: `dev`, `test`, `acceptance`, `production`. |
+| Parameter   | Required | Default      | Info                                                                                      |
+| ----------- | -------- | ------------ | ----------------------------------------------------------------------------------------- |
+| `language`  | Yes      | `''`         | ISO 639-1 language code                                                                   |
+| `env`       | No       | `production` | Options: `dev`, `test`, `acceptance`, `production`.                                       |
+| `detailUri` | No       | `''`         | The URL of the search detail page. Example: `/search` Only available in the Search Header |
 
 \* Please note that this combination wil determine the AppSearch engine so results may vary due to the chosen `env` mode and the `language`.
 
