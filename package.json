@@ -19,8 +19,8 @@
     "*.js"
   ],
   "dependencies": {
-    "@elastic/search-ui": "^1.3.2",
-    "@elastic/search-ui-app-search-connector": "^1.3.2",
+    "@elastic/search-ui": "^1.3.3",
+    "@elastic/search-ui-app-search-connector": "^1.3.3",
     "add": "^2.0.6",
     "core-js": "^3.6.4",
     "regenerator-runtime": "^0.13.5",
