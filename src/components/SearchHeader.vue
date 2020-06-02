@@ -200,7 +200,6 @@ export default {
 
   .results-flyout-wrapper {
     position: absolute;
-    background: $color-global-light;
     z-index: 200;
   }
 
