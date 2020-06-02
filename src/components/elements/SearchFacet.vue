@@ -6,6 +6,7 @@
     <div
       class="facet"
       v-for="facetItem in facet.data"
+      v-show="!facetItem.hidden"
       :key="getValue(facetItem, facet.type)"
     >
       <input

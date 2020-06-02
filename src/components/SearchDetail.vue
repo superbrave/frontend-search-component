@@ -189,7 +189,7 @@ export default {
 
           if (facet.count === 0) {
             const key = state.facets[filterKey][0]["data"].indexOf(facet);
-            state.facets[filterKey][0]["data"].splice(key);
+            state.facets[filterKey][0]["data"][key]["hidden"] = true;
           }
         });
       });
