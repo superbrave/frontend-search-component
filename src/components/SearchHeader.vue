@@ -55,6 +55,10 @@ export default {
       type: String,
       default: () => "production",
     },
+    detailUri: {
+      type: String,
+      default: () => "",
+    },
   },
   data() {
     return {
@@ -115,10 +119,7 @@ export default {
     },
 
     handleFormSubmit() {
-      window.location.href =
-        document.querySelector(".elasticsearch-data").dataset.action +
-        "?q=" +
-        this.searchInputValue;
+      window.location.href = this.detailUri + "?q=" + this.searchInputValue;
     },
     handleFlyOutEvent() {
       if (this.pageType === null) {
