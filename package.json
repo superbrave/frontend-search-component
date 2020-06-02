@@ -1,6 +1,6 @@
 {
   "name": "@superbrave/dok-search-vue",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -14,8 +14,6 @@
   "main": "./dist/sbdoksearch.common.js",
   "files": [
     "dist/*",
-    "src/*",
-    "public/*",
     "*.json",
     "*.js"
   ],
