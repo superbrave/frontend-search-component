@@ -53,7 +53,7 @@ export default {
     },
     env: {
       type: String,
-      default: () => "prod",
+      default: () => "production",
     },
   },
   data() {

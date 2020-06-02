@@ -53,10 +53,10 @@ Example HTML:
 </div>
 ```
 
-| Parameter  | Required | Default | Info                                   |
-| ---------- | -------- | ------- | -------------------------------------- |
-| `language` | Yes      | `''`    | ISO 639-1 language code                |
-| `env`      | No       | `prod`  | Options: `dev`, `test`, `acc`, `prod`. |
+| Parameter  | Required | Default      | Info                                                |
+| ---------- | -------- | ------------ | --------------------------------------------------- |
+| `language` | Yes      | `''`         | ISO 639-1 language code                             |
+| `env`      | No       | `production` | Options: `dev`, `test`, `acceptance`, `production`. |
 
 \* Please note that this combination wil determine the AppSearch engine so results may vary due to the chosen `env` mode and the `language`.
 
@@ -78,4 +78,12 @@ yarn lint
 
 ```
 yarn serve
+```
+
+### Run tests
+
+Unit test will always run before pushing to git
+
+```
+yarn test:unit
 ```

@@ -1,17 +1,23 @@
 {
   "name": "@superbrave/dok-search-vue",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
-  "license": "GPL-3.0",
-  "main": "./dist/sbdoksearch.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "web": "vue-cli-service build --target wc --name sb-search-wc ./src/main.wc.js",
-    "module": "vue-cli-service build --target lib --name sbdoksearch ./src/main.esm.js"
+    "module": "vue-cli-service build --target lib --name sbdoksearch ./src/main.esm.js",
+    "web": "vue-cli-service build --target wc --name sb-search-wc ./src/main.wc.js"
   },
-  "prettier": {},
+  "main": "./dist/sbdoksearch.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "dependencies": {
     "@elastic/search-ui": "^1.3.2",
     "@elastic/search-ui-app-search-connector": "^1.3.2",
@@ -24,11 +30,14 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
     "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-plugin-unit-jest": "~4.4.0",
     "@vue/cli-service": "~4.3.0",
+    "@vue/test-utils": "^1.0.3",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.2.5",
     "node-sass": "^4.14.1",
     "prettier": "^2.0.5",
     "sass-loader": "^8.0.2",
@@ -48,18 +57,29 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {},
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "prettier": {},
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn test:unit"
+    }
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
   ],
-  "files": [
-    "dist/*",
-    "src/*",
-    "public/*",
-    "*.json",
-    "*.js"
-  ]
+  "license": "GPL-3.0"
 }
