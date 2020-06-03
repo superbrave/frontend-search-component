@@ -37,6 +37,7 @@
       </div>
       <div class="search-main-body">
         <div class="search-meta">
+          <SearchPagingInfo :search-state="searchState" />
           <div class="mobile-only search-filters-toggle">
             <button
               @click="toggleFilters"
@@ -84,6 +85,7 @@ import getTranslations from "./../mixins/translate";
 import SearchResults from "./elements/SearchResults";
 import SearchFacet from "./elements/SearchFacet";
 import SearchBar from "./elements/SearchBar";
+import SearchPagingInfo from "./elements/SearchPagingInfo";
 
 const MIN_CHARACTERS = 3;
 const MIN_SCORE = 0.5;
@@ -93,6 +95,7 @@ export default {
     SearchResults,
     SearchFacet,
     SearchBar,
+    SearchPagingInfo,
   },
   props: {
     language: {
