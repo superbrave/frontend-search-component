@@ -9,10 +9,10 @@
     <div v-if="searchState.wasSearched" class="search-body">
       <div class="search-filters">
         <div class="search-filters-head">
-          <h4 class="search-filter-title">
+          <div class="search-filter-title">
             {{ translate("filter")
             }}<span class="mobile-only"> {{ translate("andSort") }}</span>
-          </h4>
+          </div>
           <span class="mobile-only" @click="toggleFilters"
             ><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <path

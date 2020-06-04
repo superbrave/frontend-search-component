@@ -1,8 +1,8 @@
 <template>
   <div v-show="facet.data.length" class="search-facets">
-    <h5 class="facets-title">
+    <div class="facets-title">
       {{ translate(facet.field) }}
-    </h5>
+    </div>
     <div
       class="facet"
       v-for="facetItem in facet.data"
@@ -15,7 +15,10 @@
         :id="getValue(facetItem, facet.type)"
         :value="getValue(facetItem, facet.type)"
         :checked="isChecked(getValue(facetItem, facet.type))"
-        @change="$emit('change', $event)"
+        @change="
+          $emit('change', $event);
+          $event.target.blur();
+        "
       />
       <label :for="getValue(facetItem, facet.type)" class="search-facets-label">
         {{ translate(getValue(facetItem, facet.type)) }}
@@ -70,6 +73,7 @@ export default {
   align-items: center;
   width: 100%;
   line-height: 1.8;
+  cursor: pointer;
 
   label {
     flex-grow: 1;
@@ -82,7 +86,6 @@ export default {
 }
 
 .search-facets-checkbox {
-  display: none;
   appearance: none;
 
   & + .search-facets-label {
@@ -116,6 +119,11 @@ export default {
       background: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%233fa9f6" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>');
       background-size: 18px;
     }
+  }
+
+  &:focus + .search-facets-label,
+  &:hover + .search-facets-label {
+    text-decoration: underline;
   }
 
   &:checked + .search-facets-label:before {
