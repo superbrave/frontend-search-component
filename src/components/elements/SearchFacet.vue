@@ -104,17 +104,16 @@ export default {
 
     &:after {
       position: absolute;
-      fill: black;
       content: "";
       display: none;
       top: 7px;
-      left: 4px;
+      left: 3px;
       font-family: "";
-      color: $color-secondary;
       width: 18px;
       height: 18px;
-      background: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%233fa9f6" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>');
-      background-size: 18px;
+      background-color: $color-secondary;
+      mask: url("../../svg/checkmark.svg") no-repeat 0 0;
+      mask-size: 18px;
     }
   }
 

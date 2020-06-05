@@ -198,11 +198,6 @@ export default {
     text-align: center;
   }
 
-  .results-flyout-wrapper {
-    position: absolute;
-    z-index: 200;
-  }
-
   .results-flyout {
     background: $color-global-light;
     border: 1px solid $color-border-default;
