@@ -4,7 +4,6 @@
       v-model="searchInputValue"
       @submit="handleFormSubmit"
       @keyUpEvent="handleFlyOutEvent"
-      @clear="clearFlyOut"
       @show="showFlyOut"
       :class="pageType"
     />
@@ -85,12 +84,27 @@ export default {
       this.driver.setSort(newSortBy, "asc");
     },
   },
+  beforeMount() {
+    document.querySelector("body").addEventListener("click", this.hideFlyout);
+    document.querySelector("body").addEventListener("keydown", this.hideFlyout);
+  },
   mounted() {
     if (window.location.search.includes("q=")) {
       this.setupSearchDriver();
     }
   },
   methods: {
+    hideFlyout(event) {
+      const isResultFlyout = event.path.some((item) =>
+        ["results-flyout-wrapper", "search-box"].includes(item.className)
+      );
+
+      if (!isResultFlyout) {
+        if (this.pageType === "flyout") {
+          this.pageType = null;
+        }
+      }
+    },
     setupSearchDriver() {
       this.driver = new SearchDriver(config(this.env, this.language));
       this.driver.setResultsPerPage(10);
