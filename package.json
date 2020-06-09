@@ -1,6 +1,6 @@
 {
   "name": "@superbrave/dok-search-vue",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -9,7 +9,8 @@
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
     "module": "vue-cli-service build --target lib --name sbdoksearch ./src/main.esm.js",
-    "web": "vue-cli-service build --target wc --name sb-search-wc ./src/main.wc.js"
+    "web": "vue-cli-service build --target wc --name sb-search-wc ./src/main.wc.js",
+    "publish": "yarn module && npm publish"
   },
   "main": "./dist/sbdoksearch.common.js",
   "files": [

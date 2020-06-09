@@ -18,9 +18,14 @@
             :results="searchState.results"
             :driver="this.driver"
           />
-          <div class="search-show-all" @click="handleFormSubmit">
+          <a
+            href="#"
+            class="search-show-all"
+            @click="handleFormSubmit"
+            tabindex="0"
+          >
             {{ translate("showAll") }}
-          </div>
+          </a>
         </div>
       </div>
     </template>
