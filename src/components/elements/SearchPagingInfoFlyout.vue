@@ -1,5 +1,5 @@
 <template>
-  <div class="search-results-summary">
+  <div class="search-results-summary" aria-live="polite">
     {{ searchState.totalResults }} {{ translate("resultsCounter") }} "{{
       searchState.searchTerm
     }}"

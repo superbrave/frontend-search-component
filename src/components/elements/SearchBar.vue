@@ -9,7 +9,6 @@
             class="search-box text-input"
             :class="{ 'search-box-warning': warningClass }"
             :value="value"
-            @blur="$emit('clear')"
             @focus="$emit('show', $event.target.value)"
             @input="$emit('input', $event.target.value)"
           />

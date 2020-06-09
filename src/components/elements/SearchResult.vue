@@ -1,8 +1,10 @@
 <template>
-  <article
+  <a
+    href="#"
     class="search-result"
     :class="{ 'out-of-stock': outOfStock }"
     @click="followLink"
+    :aria-label="result.title.raw || ''"
   >
     <div v-if="result.image_url" class="image">
       <img :src="result.image_url.raw" alt="" />
@@ -185,7 +187,7 @@
     </div>
     <div class="search-result-body">
       <div class="search-result-heading">
-        <h2 class="search-result-title">
+        <h3 class="search-result-title">
           <template v-if="result.title">{{ result.title.raw }}</template>
           <span v-if="result.type">{{ translate(result.type.raw) }}</span>
           <span v-if="externalHost"
@@ -194,7 +196,7 @@
                 d="M8.33 55.82h41.24v-2l.17-14.43c.1-2.66 1.76-3.98 4.2-3.85 1.95.1 3.44 1.83 3.53 4.17l.01 4.2-.02 12.52c-.06 4.42-3 7.33-7.4 7.33H7.78c-4.35-.01-7.33-3-7.34-7.4V14.1c.01-4.3 2.9-7.28 7.23-7.33l16.74-.01c2.57.02 4.26 1.63 4.26 3.92 0 2.28-1.7 3.92-4.25 3.95l-16.1.01v41.2zM56.4 13.48l-1.56 1.47-20 20c-1.1 1.1-2.25 1.74-3.9 1.45-2.97-.52-4.32-3.78-2.48-6.18.33-.43.73-.8 1.12-1.18l21.2-21.2-6.62-.05c-1.57 0-3.14.05-4.7-.02-2.32-.1-3.9-1.77-3.9-3.96.01-2.18 1.63-3.85 3.96-3.86l18.04.02C61.3.05 64.17 3 64.22 6.8l.01 17.88c-.02 2.34-1.66 3.95-3.84 4-2.23.03-3.95-1.64-4-4.03l-.01-11.16z"
               /></svg
           ></span>
-        </h2>
+        </h3>
         <span
           v-if="result.price"
           v-html="result.price.raw"
@@ -212,7 +214,7 @@
         >{{ translate("outOfStock") }}</span
       >
     </div>
-  </article>
+  </a>
 </template>
 
 <script>
@@ -238,7 +240,9 @@ export default {
     },
   },
   methods: {
-    followLink() {
+    followLink(event) {
+      event.preventDefault();
+
       this.driver.trackClickThrough(this.result.id.raw);
 
       if (this.result.url.raw) {
@@ -264,6 +268,7 @@ export default {
   @extend %flex;
 
   border-bottom: 1px solid $color-border-default;
+  text-decoration: none;
   cursor: pointer;
 
   &:hover {
@@ -307,6 +312,7 @@ export default {
       font-size: 15px;
       font-weight: 400;
       margin: 0;
+      color: $color-primary;
 
       span {
         @extend %padding-left-tiny;
@@ -364,6 +370,7 @@ export default {
   }
 
   .search-description {
+    color: $color-global-dark;
     font-size: 15px;
     height: 52px; // fallback for IE
     overflow: hidden;

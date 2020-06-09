@@ -9,11 +9,15 @@
     <div v-if="searchState.wasSearched" class="search-body">
       <div class="search-filters">
         <div class="search-filters-head">
-          <h4 class="search-filter-title">
+          <div class="search-filter-title">
             {{ translate("filter")
             }}<span class="mobile-only"> {{ translate("andSort") }}</span>
-          </h4>
-          <span class="mobile-only" @click="toggleFilters"
+          </div>
+          <span
+            class="mobile-only"
+            @click="toggleFilters"
+            tabindex="0"
+            @keyup.space="toggleFilters"
             ><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.467 7.878l6.025-5.893a.849.849 0 000-1.22L14.966.25a.892.892 0 00-.623-.25.883.883 0 00-.622.253L7.877 5.965 2.038.253A.883.883 0 001.416 0a.883.883 0 00-.623.253l-.53.514a.85.85 0 000 1.218L6.28 7.87.258 13.765a.849.849 0 000 1.22l.527.515c.165.16.388.25.622.25.236 0 .458-.09.623-.252l5.842-5.713 5.84 5.713a.883.883 0 00.623.252c.235 0 .457-.09.622-.252l.528-.515a.85.85 0 000-1.218L9.467 7.877z"
@@ -238,6 +242,10 @@ export default {
 
     toggleFilters() {
       this.$refs.searchFilters.classList.toggle("show-filters");
+
+      if (this.$refs.searchFilters.classList.contains("show-filters")) {
+        document.querySelector(".search-filters-head > .mobile-only").focus();
+      }
     },
   },
   mixins: [getTranslations],
