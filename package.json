@@ -10,7 +10,7 @@
     "lint": "vue-cli-service lint",
     "module": "vue-cli-service build --target lib --name sbdoksearch ./src/main.esm.js",
     "web": "vue-cli-service build --target wc --name sb-search-wc ./src/main.wc.js",
-    "publish": "yarn module && npm publish"
+    "publish:npm": "yarn module && npm publish"
   },
   "main": "./dist/sbdoksearch.common.js",
   "files": [
@@ -24,8 +24,7 @@
     "add": "^2.0.6",
     "core-js": "^3.6.4",
     "regenerator-runtime": "^0.13.5",
-    "vue": "^2.6.11",
-    "yarn": "^1.22.4"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
@@ -73,9 +72,10 @@
   },
   "prettier": {},
   "browserslist": [
-    "> 1%",
+    "> 2%",
     "last 2 versions",
-    "not dead"
+    "not dead",
+    "not IE 11"
   ],
   "husky": {
     "hooks": {
