@@ -76,7 +76,7 @@
       "leaflet": "Notice",
       "faq": "FAQ"
     },
-    "se": {
+    "sv": {
       "searchPlaceholder": "Sök efter produkter, symtom eller ställ en fråga ...",
       "showAll": "Visa allt",
       "resultsCounterInfix": "från",
@@ -133,7 +133,7 @@
       "leaflet": "Folheto informativo",
       "faq": "Perguntas frequentes"
     },
-    "dk": {
+    "da": {
       "searchPlaceholder": "Søg efter produkter, symptomer eller stil et spørgsmål ...",
       "showAll": "Vis alt",
       "resultsCounterInfix": "-",
