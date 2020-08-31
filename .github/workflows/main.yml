@@ -19,6 +19,7 @@ jobs:
         uses: actions/cache@v2.1.1
         with:
           path: node_modules
+          key: ${{ runner.os }}-nodemodules 
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
