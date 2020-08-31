@@ -19,7 +19,7 @@
       "leaflet": "Packungsbeilage",
       "faq": "FAQ",
       "page": "Seite",
-      "blog": "Blog"
+      "post": "Blog"
     },
     "en": {
       "searchPlaceholder": "Search for products, symptoms or ask a question ...",
@@ -40,7 +40,7 @@
       "leaflet": "Leaflet",
       "faq": "FAQ",
       "page": "Page",
-      "blog": "Blog"
+      "post": "Blog"
     },
     "nl": {
       "searchPlaceholder": "Zoek naar producten, symptomen of stel een vraag ...",
@@ -61,7 +61,7 @@
       "leaflet": "Bijsluiter",
       "faq": "FAQ",
       "page": "Pagina",
-      "blog": "Blog"
+      "post": "Blog"
     },
     "fr": {
       "searchPlaceholder": "Recherchez des produits, des symptômes ou posez une question ...",
@@ -82,7 +82,7 @@
       "leaflet": "Notice",
       "faq": "FAQ",
       "page": "Page",
-      "blog": "Blog"
+      "post": "Blog"
     },
     "sv": {
       "searchPlaceholder": "Sök efter produkter, symtom eller ställ en fråga ...",
@@ -103,7 +103,7 @@
       "leaflet": "Bipacksedel",
       "faq": "FAQ",
       "page": "Sida",
-      "blog": "Blogg"
+      "post": "Blogg"
     },
     "pl": {
       "searchPlaceholder": "Znajdź produkty, objawy lub zadaj pytanie ...",
@@ -124,7 +124,7 @@
       "leaflet": "Ulotka",
       "faq": "FAQ",
       "page": "Strona",
-      "blog": "Blog"
+      "post": "Blog"
     },
     "pt": {
       "searchPlaceholder": "Pesquise produtos, sintomas ou coloque uma questão ...",
@@ -145,7 +145,7 @@
       "leaflet": "Folheto informativo",
       "faq": "Perguntas frequentes",
       "page": "Página",
-      "blog": "Blog"
+      "post": "Blog"
     },
     "da": {
       "searchPlaceholder": "Søg efter produkter, symptomer eller stil et spørgsmål ...",
@@ -166,7 +166,7 @@
       "leaflet": "Indlægsseddel",
       "faq": "Ofte stillede spørgsmål",
       "page": "Side",
-      "blog": "Blog"
+      "post": "Blog"
     },
     "es": {
       "searchPlaceholder": "Busque productos, síntomas o haga una pregunta ...",
@@ -187,7 +187,7 @@
       "leaflet": "Prospecto",
       "faq": "Preguntas más frecuentes",
       "page": "Página",
-      "blog": "Blog"
+      "post": "Blog"
     }
   }
 }
