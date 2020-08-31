@@ -26,6 +26,7 @@ jobs:
         with:
           browser: chrome
           headless: true
+          start: npm serve
 
       - uses: borales/actions-yarn@v2.3.0
         with:
