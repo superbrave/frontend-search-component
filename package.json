@@ -1,6 +1,6 @@
 {
   "name": "@superbrave/dok-search-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -70,8 +70,7 @@
   "browserslist": [
     "> 2%",
     "last 2 versions",
-    "not dead",
-    "not IE 11"
+    "not dead"
   ],
   "license": "GPL-3.0"
 }
