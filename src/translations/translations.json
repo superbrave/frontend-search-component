@@ -19,7 +19,7 @@
       "leaflet": "Packungsbeilage",
       "faq": "FAQ",
       "page": "Seite",
-      "blog-post": "Blog"
+      "post": "Blog"
     },
     "en": {
       "searchPlaceholder": "Search for products, symptoms or ask a question ...",
@@ -40,7 +40,7 @@
       "leaflet": "Leaflet",
       "faq": "FAQ",
       "page": "Page",
-      "blog-post": "Blog"
+      "post": "Blog"
     },
     "nl": {
       "searchPlaceholder": "Zoek naar producten, symptomen of stel een vraag ...",
@@ -61,7 +61,7 @@
       "leaflet": "Bijsluiter",
       "faq": "FAQ",
       "page": "Pagina",
-      "blog-post": "Blog"
+      "post": "Blog"
     },
     "fr": {
       "searchPlaceholder": "Recherchez des produits, des symptômes ou posez une question ...",
@@ -82,9 +82,9 @@
       "leaflet": "Notice",
       "faq": "FAQ",
       "page": "Page",
-      "blog-post": "Blog"
+      "post": "Blog"
     },
-    "se": {
+    "sv": {
       "searchPlaceholder": "Sök efter produkter, symtom eller ställ en fråga ...",
       "showAll": "Visa allt",
       "resultsCounterInfix": "från",
@@ -103,7 +103,7 @@
       "leaflet": "Bipacksedel",
       "faq": "FAQ",
       "page": "Sida",
-      "blog-post": "Blogg"
+      "post": "Blogg"
     },
     "pl": {
       "searchPlaceholder": "Znajdź produkty, objawy lub zadaj pytanie ...",
@@ -124,7 +124,7 @@
       "leaflet": "Ulotka",
       "faq": "FAQ",
       "page": "Strona",
-      "blog-post": "Blog"
+      "post": "Blog"
     },
     "pt": {
       "searchPlaceholder": "Pesquise produtos, sintomas ou coloque uma questão ...",
@@ -145,9 +145,9 @@
       "leaflet": "Folheto informativo",
       "faq": "Perguntas frequentes",
       "page": "Página",
-      "blog-post": "Blog"
+      "post": "Blog"
     },
-    "dk": {
+    "da": {
       "searchPlaceholder": "Søg efter produkter, symptomer eller stil et spørgsmål ...",
       "showAll": "Vis alt",
       "resultsCounterInfix": "-",
@@ -166,7 +166,7 @@
       "leaflet": "Indlægsseddel",
       "faq": "Ofte stillede spørgsmål",
       "page": "Side",
-      "blog-post": "Blog"
+      "post": "Blog"
     },
     "es": {
       "searchPlaceholder": "Busque productos, síntomas o haga una pregunta ...",
@@ -187,7 +187,7 @@
       "leaflet": "Prospecto",
       "faq": "Preguntas más frecuentes",
       "page": "Página",
-      "blog-post": "Blog"
+      "post": "Blog"
     }
   }
 }
