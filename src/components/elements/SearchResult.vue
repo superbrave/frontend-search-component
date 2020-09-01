@@ -150,6 +150,7 @@ export default {
     justify-content: flex-start;
     align-self: flex-start;
     flex-direction: column;
+    flex: 1 1 100%;
     -ms-flex: 0 0 90%; // For IE
   }
 
