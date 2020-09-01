@@ -6,6 +6,7 @@
           <input
             type="text"
             :placeholder="translate('searchPlaceholder')"
+            :aria-label="translate('searchButton')"
             class="search-box text-input"
             :class="{ 'search-box-warning': warningClass }"
             :value="value"
