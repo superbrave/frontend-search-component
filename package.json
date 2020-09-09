@@ -16,6 +16,9 @@
     "web": "vue-cli-service build --target wc --name sb-search-wc ./src/main.wc.js",
     "publish:npm": "yarn module && npm publish"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "main": "./dist/sbdoksearch.common.js",
   "files": [
     "dist/*",
