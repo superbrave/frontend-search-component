@@ -6,8 +6,8 @@ function getConnector(env, lang) {
     engineName: "dokteronline-" + env + "-" + lang,
     hostIdentifier: "host-h892yb",
     endpointBase:
-      "https://35d2a6695b4246598942ab98200ac709.app-search.eu-central-1.aws.cloud.es.io",
-    searchKey: "search-po4yowdaz11ib78z4jo535m6",
+      "https://2f98e35e63fa458c89886be577b61301.ent-search.eu-central-1.aws.cloud.es.io",
+    searchKey: "search-rrti3qoef44ys27fa2y2hbeu",
   });
 }
 
