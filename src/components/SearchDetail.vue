@@ -106,6 +106,10 @@ export default {
       type: String,
       required: true,
     },
+    country: {
+      type: String,
+      required: true,
+    },
     env: {
       type: String,
       default: () => "production",
@@ -139,7 +143,7 @@ export default {
     },
   },
   beforeMount() {
-    this.driver = new SearchDriver(config(this.env, this.language));
+    this.driver = new SearchDriver(config(this.env, this.language, this.country));
     this.driver.setResultsPerPage(50);
   },
   mounted() {
@@ -251,6 +255,7 @@ export default {
   mixins: [getTranslations],
   provide() {
     return {
+      country: this.country,
       language: this.language,
     };
   },
