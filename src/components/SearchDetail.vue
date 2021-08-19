@@ -108,7 +108,7 @@ export default {
     },
     country: {
       type: String,
-      required: true,
+      required: false,
     },
     env: {
       type: String,
