@@ -2,7 +2,7 @@ import "regenerator-runtime/runtime";
 import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
 
 function getConnector(env, lang, country) {
-  let countrySuffix = country ? `-${country}` : ''
+  const countrySuffix = country ? `-${country}` : "";
 
   return new AppSearchAPIConnector({
     engineName: "dokteronline-" + env + "-" + lang + countrySuffix,
