@@ -55,6 +55,10 @@ export default {
       type: String,
       required: true,
     },
+    country: {
+      type: String,
+      required: false,
+    },
     env: {
       type: String,
       default: () => "production",
@@ -111,7 +115,7 @@ export default {
       }
     },
     setupSearchDriver() {
-      this.driver = new SearchDriver(config(this.env, this.language));
+      this.driver = new SearchDriver(config(this.env, this.language, this.country));
       this.driver.setResultsPerPage(10);
 
       const { searchTerm, sortField } = this.driver.getState();
@@ -166,6 +170,7 @@ export default {
   mixins: [getTranslations],
   provide() {
     return {
+      country: this.country,
       language: this.language,
     };
   },
