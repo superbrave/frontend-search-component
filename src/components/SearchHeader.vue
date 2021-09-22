@@ -104,8 +104,10 @@ export default {
   },
   methods: {
     hideFlyout(event) {
-      const isResultFlyout = event.path.some((item) =>
-        ["results-flyout-wrapper", "search-box"].includes(item.className)
+      const isResultFlyout = Object.values(
+        event.target.classList
+      ).some((className) =>
+        ["results-flyout-wrapper", "search-box"].includes(className)
       );
 
       if (!isResultFlyout) {
@@ -115,7 +117,9 @@ export default {
       }
     },
     setupSearchDriver() {
-      this.driver = new SearchDriver(config(this.env, this.language, this.country));
+      this.driver = new SearchDriver(
+        config(this.env, this.language, this.country)
+      );
       this.driver.setResultsPerPage(10);
 
       const { searchTerm, sortField } = this.driver.getState();
