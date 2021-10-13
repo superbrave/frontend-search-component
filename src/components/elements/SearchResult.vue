@@ -85,7 +85,7 @@ export default {
   },
   computed: {
     externalHost() {
-      return !this.result.url.raw.includes(window.location.host);
+      return !!this.result.url.raw.match('((http(s?))://)')
     },
     outOfStock() {
       return this.result?.inStock?.raw === "false";
