@@ -1,6 +1,6 @@
 <template>
   <a
-    href="#"
+    :href="result.url.raw"
     class="search-result"
     :class="{ 'out-of-stock': outOfStock }"
     @click="followLink"
