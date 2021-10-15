@@ -89,7 +89,7 @@ Unit test will always run before pushing to git
 yarn test:unit
 ```
 
-### Create a new release
+# Create a new release
 
 To create a new release you must run:
 
