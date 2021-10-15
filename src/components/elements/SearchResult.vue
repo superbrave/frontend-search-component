@@ -1,10 +1,10 @@
 <template>
   <a
-    :href="result.url.raw"
+    :href="result.url ? result.url.raw : '#'"
     class="search-result"
     :class="{ 'out-of-stock': outOfStock }"
     @click="followLink"
-    :aria-label="result.title.raw || ''"
+    :aria-label="result.title ? result.title.raw : ''"
   >
     <div v-if="result.image_url" class="image">
       <img :src="result.image_url.raw" alt="" />
@@ -85,7 +85,7 @@ export default {
   },
   computed: {
     externalHost() {
-      return !!this.result.url.raw.match('((http(s?))://)')
+      return !!this.result.url.raw.match("((http(s?))://)");
     },
     outOfStock() {
       return this.result?.inStock?.raw === "false";
