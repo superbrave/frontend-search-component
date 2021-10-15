@@ -88,3 +88,13 @@ Unit test will always run before pushing to git
 ```
 yarn test:unit
 ```
+
+### Create a new release
+
+To create a new release you must run:
+
+```
+npm run release
+```
+
+> Please note that this uses NPM and you need to be logged in to NPM to publish a new version.
