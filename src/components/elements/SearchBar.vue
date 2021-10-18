@@ -80,7 +80,7 @@ export default {
       if (
         (keyCode >= 48 && keyCode <= 57) ||
         (keyCode >= 65 && keyCode <= 91) ||
-        [8, 189].includes(keyCode)
+        [8, 189, 229].includes(keyCode)
       ) {
         return true;
       }
