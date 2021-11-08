@@ -44,7 +44,7 @@
     "dotenv": "^10.0.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "sass": "^4.14.1",
+    "sass": "^1.43.0",
     "prettier": "^2.0.5",
     "release-it": "^14.11.6",
     "sass-loader": "^8.0.2",
