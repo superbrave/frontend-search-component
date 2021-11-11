@@ -104,10 +104,9 @@ export default {
   },
   methods: {
     hideFlyout(event) {
-      const isResultFlyout = Object.values(
-        event.target.classList
-      ).some((className) =>
-        ["results-flyout-wrapper", "search-box"].includes(className)
+      const isResultFlyout = Object.values(event.target.classList).some(
+        (className) =>
+          ["results-flyout-wrapper", "search-box"].includes(className)
       );
 
       if (!isResultFlyout) {
@@ -182,6 +181,7 @@ export default {
 </script>
 
 <style lang="scss">
+@use "sass:math";
 @import "./../scss/style.scss";
 
 .search-component {
@@ -266,9 +266,9 @@ export default {
   @extend %padding-vertical-tiny;
   @extend %padding-horizontal-base;
   @extend %inline-block;
-  @extend %font-size-senary;
+  @extend %font-size-base;
 
-  border-radius: rem($button-border-radius / 2);
+  border-radius: rem(math.div($button-border-radius, 2));
   border: 1px solid transparent;
   color: $color-global-light;
   text-decoration: none;
