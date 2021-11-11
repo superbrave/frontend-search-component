@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^3.3.0",
+    "@superbrave/utility-framework": "^0.4.0",
     "@vue/cli-plugin-babel": "~4.3.0",
     "@vue/cli-plugin-e2e-cypress": "~4.4.0",
     "@vue/cli-plugin-eslint": "~4.3.0",
@@ -44,11 +45,10 @@
     "dotenv": "^10.0.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "sass": "^1.43.0",
     "prettier": "^2.0.5",
     "release-it": "^14.11.6",
+    "sass": "^1.43.0",
     "sass-loader": "^8.0.2",
-    "superbrave-utility-framework": "^0.0.20",
     "vue-loader": "^15.9.2",
     "vue-template-compiler": "^2.6.11"
   },

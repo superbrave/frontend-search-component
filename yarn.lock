@@ -1322,6 +1322,11 @@
   resolved "https://registry.yarnpkg.com/@soda/get-current-script/-/get-current-script-1.0.2.tgz#a53515db25d8038374381b73af20bb4f2e508d87"
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
 
+"@superbrave/utility-framework@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@superbrave/utility-framework/-/utility-framework-0.4.0.tgz#a7519b296f01e6f77ef4cea051d141eea35b4234"
+  integrity sha512-B6jpTvac+HVwykhVpzfgyURo9Dm5OjxiuH4x9RXdVax66m2M0Qd+rMoEkqKm0lFINCm83A/n6d2iFtESR1eoIw==
+
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@szmarczak/http-timer/-/http-timer-1.1.2.tgz#b1665e2c461a2cd92f4c1bbf50d5454de0d4b421"
@@ -11203,11 +11208,6 @@ stylehacks@^4.0.0:
     browserslist "^4.0.0"
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
-
-superbrave-utility-framework@^0.0.20:
-  version "0.0.20"
-  resolved "https://registry.yarnpkg.com/superbrave-utility-framework/-/superbrave-utility-framework-0.0.20.tgz#5987d01e234b78d3de6a10f08ba790b7faf1a78d"
-  integrity sha512-ABicj6aaNw0EdfRE91gF6nhEdag+FvZPRV9ABP6Pe1p3ijap4kgowXWI4XUE80BywQsSyzmnYUzQbDgU5sDUHg==
 
 supports-color@5.5.0, supports-color@^5.3.0:
   version "5.5.0"
