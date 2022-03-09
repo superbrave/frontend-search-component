@@ -188,6 +188,27 @@
       "faq": "Preguntas más frecuentes",
       "page": "Página",
       "post": "Blog"
+    },
+    "fi": {
+      "searchPlaceholder": "Etsi tuotteita, oireita tai kysy kysymys ...",
+      "showAll": "Näytä kaikki tulokset",
+      "resultsCounterInfix": "kokonaisuudesta",
+      "resultsCounter": "tulokset haulle",
+      "priceFrom": "kohteesta",
+      "outOfStock": "Loppu varastosta",
+      "resultsPerPage": "Näytä",
+      "sortBy": "Lajittele kriteerillä",
+      "sortByRelevance": "Merkitys",
+      "sortByTitle": "Otsikko",
+      "filter": "Suodatin",
+      "andSort": "ja lajittele",
+      "searchButton": "Etsi ",
+      "product": "Tuote",
+      "category": "Luokka",
+      "leaflet": "Esite",
+      "faq": "UKK",
+      "page": "Sivu",
+      "post": "Blogi"
     }
   }
 }
