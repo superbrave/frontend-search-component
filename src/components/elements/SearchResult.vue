@@ -227,6 +227,8 @@ export default {
     font-size: 15px;
     height: 52px; // fallback for IE
     overflow: hidden;
+    word-break: break-word; // deprecated but needed for Safari
+    overflow-wrap: anywhere;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
